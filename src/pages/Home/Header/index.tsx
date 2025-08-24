@@ -41,7 +41,7 @@ export function Header() {
         </div>
         <div>
           <small>mkdigo@gmail.com</small>
-          <small>090-9441-9358</small>
+          <small>+81 090-9441-9358</small>
         </div>
         <img src={qrcode} alt='QR Code' />
       </div>
