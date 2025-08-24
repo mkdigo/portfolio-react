@@ -1,5 +1,8 @@
-import handCodingSvg from '../../../assets/svgs/hand-coding.svg';
 import qrcode from '../../../assets/images/contact-qrcode.png';
+import handCodingSvg from '../../../assets/svgs/hand-coding.svg';
+import gitHubLogo from '../../../assets/svgs/github.svg';
+import facebookLogo from '../../../assets/svgs/facebook.svg';
+import linkedinLogo from '../../../assets/svgs/linkedin.svg';
 
 import styles from './styles.module.scss';
 
@@ -17,7 +20,7 @@ export function Header() {
             target='_blank'
             rel='noopener noreferrer'
           >
-            <img src='./src/assets/svgs/github.svg' alt='Logo do Github' />
+            <img src={gitHubLogo} alt='Logo do Github' />
           </a>
           <a
             href='https://www.facebook.com/mkdigo'
@@ -25,7 +28,7 @@ export function Header() {
             rel='noopener noreferrer'
             style={{ ['--delay' as any]: '1s' }}
           >
-            <img src='./src/assets/svgs/facebook.svg' alt='Logo do Facebook' />
+            <img src={facebookLogo} alt='Logo do Facebook' />
           </a>
           <a
             href='https://www.linkedin.com/in/rodrigomukudai'
@@ -33,12 +36,11 @@ export function Header() {
             rel='noopener noreferrer'
             style={{ ['--delay' as any]: '2s' }}
           >
-            <img src='./src/assets/svgs/linkedin.svg' alt='Logo do Linkedin' />
+            <img src={linkedinLogo} alt='Logo do Linkedin' />
           </a>
         </div>
         <div>
           <small>mkdigo@gmail.com</small>
-          {/* <br /> */}
           <small>090-9441-9358</small>
         </div>
         <img src={qrcode} alt='QR Code' />

@@ -2,8 +2,9 @@ import gitHubLogo from '../../../assets/svgs/github.svg';
 import facebookLogo from '../../../assets/svgs/facebook.svg';
 import linkedinLogo from '../../../assets/svgs/linkedin.svg';
 
-import styles from './styles.module.scss';
 import { DateTime } from '@mkdigo/datetime';
+
+import styles from './styles.module.scss';
 
 export function Profile() {
   return (

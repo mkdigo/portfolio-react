@@ -48,7 +48,6 @@
 
       height: 2px;
       width: 100px;
-      margin-top: -5px;
       left: 0;
 
       background-image: linear-gradient(
@@ -60,6 +59,10 @@
       opacity: 0;
 
       animation: line-animation 2s linear infinite;
+    }
+
+    h1:after {
+      margin-top: -8px;
     }
 
     h2:after {
