@@ -3,6 +3,8 @@ import pokemonScreen from '../../../assets/images/pokemon.png';
 import exchangeRateScreen from '../../../assets/images/exchange_rate.png';
 import lyricsScreen from '../../../assets/images/lyrics.png';
 import megasenaScreen from '../../../assets/images/megasena.jpg';
+import sudokuScreen from '../../../assets/images/sudoku.png';
+import jokenpoScreen from '../../../assets/images/jokenpo.png';
 
 import styles from './styles.module.scss';
 
@@ -200,6 +202,78 @@ export function Projects() {
                 rel='noopener noreferrer'
               >
                 https://github.com/mkdigo/mega-sena
+              </a>
+            </p>
+          </div>
+        </article>
+
+        <article>
+          <div className={styles.txt}>
+            <h3>Jogo Sudoku</h3>
+
+            <p>
+              Jogo Sudoku feito de forma 100% autoral usando typescript. Nenhuma
+              biblioteca foi utilizada.
+            </p>
+            <p>
+              <a
+                href='https://projects.rodrigomukudai.com/sudoku'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://projects.rodrigomukudai.com/sudoku
+              </a>
+              <a
+                href='https://github.com/mkdigo/sudoku-game'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://github.com/mkdigo/sudoku-game
+              </a>
+            </p>
+          </div>
+          <div className={styles.img}>
+            <a
+              href='https://projects.rodrigomukudai.com/sudoku'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={sudokuScreen} alt='Sudoku Page' />
+            </a>
+          </div>
+        </article>
+
+        <article>
+          <div className={styles.img}>
+            <a
+              href='https://projects.rodrigomukudai.com/jokenpo'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={jokenpoScreen} alt='Jokenpo Page' />
+            </a>
+          </div>
+          <div className={styles.txt}>
+            <h3>Jogo Jokenpo (Pedra, Papel ou Tesoura)</h3>
+
+            <p>
+              Jogo Jokenpo (Pedra, Papel ou Tesoura) feito de forma 100% autoral
+              usando typescript. Nenhuma biblioteca foi utilizada.
+            </p>
+            <p>
+              <a
+                href='https://projects.rodrigomukudai.com/jokenpo'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://projects.rodrigomukudai.com/jokenpo
+              </a>
+              <a
+                href='https://github.com/mkdigo/jokenpo-game'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://github.com/mkdigo/jokenpo-game
               </a>
             </p>
           </div>
