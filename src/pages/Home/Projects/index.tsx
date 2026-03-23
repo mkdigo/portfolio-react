@@ -5,6 +5,7 @@ import lyricsScreen from '../../../assets/images/lyrics.png';
 import megasenaScreen from '../../../assets/images/megasena.jpg';
 import sudokuScreen from '../../../assets/images/sudoku.png';
 import jokenpoScreen from '../../../assets/images/jokenpo.png';
+import minesweeperScreen from '../../../assets/images/minesweeper.png';
 
 import styles from './styles.module.scss';
 
@@ -276,6 +277,42 @@ export function Projects() {
                 https://github.com/mkdigo/jokenpo-game
               </a>
             </p>
+          </div>
+        </article>
+
+        <article>
+          <div className={styles.txt}>
+            <h3>Jogo Campo Minado</h3>
+
+            <p>
+              Um clássico dos jogos de computado, feito também de forma 100%
+              autoral usando typescript. Nenhuma biblioteca foi utilizada.
+            </p>
+            <p>
+              <a
+                href='https://projects.rodrigomukudai.com/minesweeper'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://projects.rodrigomukudai.com/minesweeper
+              </a>
+              <a
+                href='https://github.com/mkdigo/minesweeper-game'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://github.com/mkdigo/minesweeper-game
+              </a>
+            </p>
+          </div>
+          <div className={styles.img}>
+            <a
+              href='https://projects.rodrigomukudai.com/minesweeper'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={minesweeperScreen} alt='Jokenpo Page' />
+            </a>
           </div>
         </article>
       </div>
