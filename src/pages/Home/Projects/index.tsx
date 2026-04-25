@@ -6,6 +6,7 @@ import megasenaScreen from '../../../assets/images/megasena.jpg';
 import sudokuScreen from '../../../assets/images/sudoku.png';
 import jokenpoScreen from '../../../assets/images/jokenpo.png';
 import minesweeperScreen from '../../../assets/images/minesweeper.png';
+import geniusScreen from '../../../assets/images/genius-game.png';
 
 import styles from './styles.module.scss';
 
@@ -313,6 +314,43 @@ export function Projects() {
             >
               <img src={minesweeperScreen} alt='Jokenpo Page' />
             </a>
+          </div>
+        </article>
+        <article>
+          <div className={styles.img}>
+            <a
+              href='https://projects.rodrigomukudai.com/genius'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img src={geniusScreen} alt='Genius Page' />
+            </a>
+          </div>
+          <div className={styles.txt}>
+            <h3>Genius - Jogo da Memória</h3>
+
+            <p>
+              O Genius (conhecido internacionalmente como Simon) é um dos jogos
+              eletrônicos mais icônicos da década de 80, projetado para testar a
+              memória visual dos jogadores. O objetivo é repetir uma sequência
+              de cores gerada pelo computador.
+            </p>
+            <p>
+              <a
+                href='https://projects.rodrigomukudai.com/genius'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://projects.rodrigomukudai.com/genius
+              </a>
+              <a
+                href='https://github.com/mkdigo/genius-game'
+                target='_blank'
+                rel='noopener noreferrer'
+              >
+                https://github.com/mkdigo/genius-game
+              </a>
+            </p>
           </div>
         </article>
       </div>

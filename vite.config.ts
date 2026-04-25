@@ -10,7 +10,6 @@ export default defineConfig({
         math: 'parens-division',
       },
       scss: {
-        api: 'modern-compiler', // or "modern", "legacy"
         importers: [
           // ...
         ],
