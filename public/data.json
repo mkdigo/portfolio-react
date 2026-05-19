@@ -1,0 +1,101 @@
+{
+  "name": "Rodrigo Mukudai",
+  "birthdate": "1985-06-20",
+  "marital_status": "casado",
+  "cellphone": "+55 (11) 96324-2678",
+  "email": "mkdigo@gmail.com",
+  "address": {
+    "zipcode": "04295-001",
+    "state": "SP",
+    "city": "São Paulo",
+    "street": "Av. Coronel José Pires de Andrade, 901",
+    "complement": "Condomínio Alto das Mercês, apto 66",
+    "neighborhood": "Vila Vera"
+  },
+  "description": [
+    "Sou uma pessoa dedicada e com sede de conhecimento, onde os estudos fazem parte da minha rotina. Busco sempre fazer as coisas da melhor forma possível. Meu ponto forte é a capacidade de resolver problemas e foi por isso que me identifiquei com o mundo da programação, onde as linhas de códigos são apenas uma ferramenta para isso.",
+    "Tenho grande facilidade em trabalhar em equipe, buscando sempre o bom convívio e incentivando as pessoas a ajudarem umas às outras.",
+    "Iniciei meus estudos em programação em 2017 com PHP, e desde então estou sempre procurando aprender mais. Hoje, minha principal ferramenta para construir o front-end é o React com Typescript, e para o back-end é o Laravel. No momento tenho focado muito meus estudos em construir um back-end usando Node/Typescript, utilizando os princípios do Domain Driven Design."
+  ],
+  "skills": [
+    "HTML5",
+    "CSS",
+    "Javascript",
+    "React",
+    "Typescript",
+    "Node",
+    "PHP",
+    "Laravel",
+    "Docker",
+    "Git",
+    "Word",
+    "Excel"
+  ],
+  "languages": ["Português nativo", "Japonês Básico", "Inglês Iniciante"],
+  "graduations": [
+    {
+      "id": 1,
+      "institute": "CEALPA - Centro de Ensino da Alta Paulista",
+      "local": "Lucélia/SP",
+      "name": "Bacharel em Ciências Contábeis",
+      "period": "2002 - 2006"
+    },
+    {
+      "id": 2,
+      "institute": "Microlins",
+      "local": "Dracena/SP",
+      "name": "Montagem e Manutenção de Computadores",
+      "period": "2007"
+    },
+    {
+      "id": 3,
+      "institute": "Compuclass",
+      "local": "São Paulo/SP",
+      "name": "Desenvolvimento Web",
+      "period": "2017"
+    }
+  ],
+  "professional_experiences": [
+    {
+      "id": 1,
+      "company": "GSN Recruit",
+      "local": "Handa, Aichi-ken, Japão",
+      "position": "Desenvolvedor de sistema e departamento financeiro",
+      "period": "FEVEREIRO 2021 - ABRIL 2026",
+      "description": "Desenvolver os sistemas e o site que a empresa usa. Criação de relatórios financeiros, cálculos de salários a pagar, faturamento, etc."
+    },
+    {
+      "id": 2,
+      "company": "Advics",
+      "local": "Handa, Aichi-ken, Japão",
+      "position": "Responsável pelo abastecimento",
+      "period": "SETEMBRO 2017 - SETEMBRO 2020",
+      "description": "A Advics é uma fábrica de freios automotivo onde eu era responsável pelo abastecimento dos materiais usados na produção."
+    },
+    {
+      "id": 3,
+      "company": "Denso",
+      "local": "Anjo, Aichi-ken, Japão",
+      "position": "Operador de máquinas",
+      "period": "ABRIL 2013 - AGOSTO 2016",
+      "description": "A Denso é uma fábrica de tubos do ar-condicionado automotivo onde eu era responsável pela operação das máquinas do meu setor."
+    },
+    {
+      "id": 4,
+      "company": "Murata",
+      "local": "Komatsu, Ishikawa-ken, Japão",
+      "position": "Lider de equipe",
+      "period": "MAIO 2008 - MARÇO 2012",
+      "description": "Fábrica de componentes eletrônicos. Era responsável por liderar e organizar os times. Definir as funções, controlar a qualidade, produtividade e prevenção de acidentes."
+    },
+    {
+      "id": 5,
+      "company": "Supermercados Ikeda",
+      "local": "Irapuru, São Paulo, Brasil",
+      "position": "Auxiliar de escritório",
+      "period": "JULHO 2002 - MAIO 2007",
+      "description": "Controle de estoque, cálculo dos custos das mercadorias e escrita fiscal."
+    }
+  ],
+  "projects_links": ["https://rodrigomukudai.com", "https://github.com/mkdigo"]
+}

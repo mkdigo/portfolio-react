@@ -1,24 +1,59 @@
+import { useEffect, useState } from 'react';
+import { PDFDownloadLink } from '@react-pdf/renderer';
+import { DateTime } from '@mkdigo/datetime';
+
 import gitHubLogo from '../../../assets/svgs/github.svg';
 import facebookLogo from '../../../assets/svgs/facebook.svg';
 import linkedinLogo from '../../../assets/svgs/linkedin.svg';
 
-import { DateTime } from '@mkdigo/datetime';
+import { ResumePDF } from '../../../components/ResumePDF';
+import { TResumeData } from '../../../types';
 
 import styles from './styles.module.scss';
 
 export function Profile() {
+  const [data, setData] = useState<TResumeData>();
+
+  useEffect(() => {
+    fetch('/data.json')
+      .then((response) => {
+        if (!response.ok) return;
+        return response.json();
+      })
+      .then((data) => {
+        setData(data);
+      });
+  }, []);
+
+  if (!data) return null;
+
   return (
     <section className={styles.profile}>
       <div className={`neumorphism ${styles.container}`}>
         <h2>Perfil</h2>
         <ul>
           <li>
+            <strong>Curriculum:</strong>
+            <span>
+              <a href='/resume' target='_blank' rel='noopener noreferrer'>
+                Visualizar
+              </a>
+              {'       '}
+              <PDFDownloadLink
+                document={<ResumePDF data={data} />}
+                fileName='Resume'
+              >
+                Download
+              </PDFDownloadLink>
+            </span>
+          </li>
+          <li>
             <strong>Nome:</strong>
-            <span>Rodrigo Yukio Mukudai</span>
+            <span>{data.name}</span>
           </li>
           <li>
             <strong>Idade:</strong>
-            <span>{DateTime.getAge('1985-06-20')}</span>
+            <span>{DateTime.getAge(data.birthdate)}</span>
           </li>
           <li>
             <strong>Nacionalidade:</strong>
@@ -26,7 +61,9 @@ export function Profile() {
           </li>
           <li>
             <strong>Residência:</strong>
-            <span>Aichi-ken / Japão</span>
+            <span>
+              {data.address.city} - {data.address.state}
+            </span>
           </li>
           <li>
             <strong>Escolaridade:</strong>
@@ -40,21 +77,12 @@ export function Profile() {
             <strong>Outros cursos:</strong>
             <span>
               Montagem e manutenção de computadores, Desenvolvimento Web, Word,
-              Excel, Photoshop, Corel Draw
+              Excel, Photoshop
             </span>
           </li>
           <li>
             <strong>Resumo:</strong>
-            <span>
-              Sou uma pessoa dedicada e com sede de conhecimento, onde os
-              estudos fazem parte da minha rotina. Busco sempre fazer as coisas
-              da melhor forma possível. Meu ponto forte é a capacidade de
-              resolver problemas e foi por isso que me identifiquei com o mundo
-              da programação, onde as linhas de códigos são apenas uma
-              ferramenta para isso. Tenho grande facilidade em trabalhar em
-              equipe, buscando sempre o bom convívio e incentivando as pessoas a
-              ajudarem umas às outras.
-            </span>
+            <span>{data.description.join('\n\n')}</span>
           </li>
           <li className={styles.socialMedia}>
             <strong>Mídias Sociais:</strong>
