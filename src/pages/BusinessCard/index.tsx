@@ -1,26 +1,14 @@
 import { Link } from 'react-router-dom';
 
-import qr from '../../assets/images/contact-qrcode.png';
+import { useAppContext } from '../../hooks/useAppContext';
+import { QRCode } from '../../components/QRCode';
 
 import styles from './styles.module.scss';
-import { useEffect, useState } from 'react';
-import { TResumeData } from '../../types';
 
 export function BusinessCard() {
-  const [data, setData] = useState<TResumeData>();
+  const { resumeData } = useAppContext();
 
-  useEffect(() => {
-    fetch('/data.json')
-      .then((response) => {
-        if (!response.ok) return;
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
-
-  if (!data) return null;
+  if (!resumeData) return null;
 
   return (
     <main className={styles.container}>
@@ -30,11 +18,16 @@ export function BusinessCard() {
           <h2>Desenvolvedor Full Stack</h2>
         </div>
         <div>
-          <Link to='/'>https://rodrigomukudai.com</Link>
-          <small>{data.email}</small>
-          <small>{data.cellphone}</small>
+          {resumeData.projects_links.map((link) => (
+            <Link to={link} key={link}>
+              {link}
+            </Link>
+          ))}
+          <small>{resumeData.email}</small>
+          <small>{resumeData.cellphone}</small>
         </div>
-        <img src={qr} className={styles.qr} alt='QR Code' />
+        {/* <img src={qr} className={styles.qr} alt='QR Code' /> */}
+        <QRCode className={styles.qr} />
       </div>
     </main>
   );

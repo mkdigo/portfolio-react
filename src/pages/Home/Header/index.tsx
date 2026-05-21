@@ -1,12 +1,15 @@
-import qrcode from '../../../assets/images/contact-qrcode.png';
 import handCodingSvg from '../../../assets/svgs/hand-coding.svg';
 import gitHubLogo from '../../../assets/svgs/github.svg';
 import facebookLogo from '../../../assets/svgs/facebook.svg';
 import linkedinLogo from '../../../assets/svgs/linkedin.svg';
+import { QRCode } from '../../../components/QRCode';
 
 import styles from './styles.module.scss';
+import { useAppContext } from '../../../hooks/useAppContext';
 
 export function Header() {
+  const { resumeData } = useAppContext();
+
   return (
     <header className={styles.header}>
       <div className={styles.data}>
@@ -40,10 +43,10 @@ export function Header() {
           </a>
         </div>
         <div>
-          <small>mkdigo@gmail.com</small>
-          <small>+55 (11) 96234-2678</small>
+          <small>{resumeData?.email}</small>
+          <small>{resumeData?.cellphone}</small>
         </div>
-        <img src={qrcode} alt='QR Code' />
+        <QRCode />
       </div>
       <div className={styles.img}>
         <img src={handCodingSvg} />

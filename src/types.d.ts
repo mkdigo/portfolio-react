@@ -5,12 +5,9 @@ export type TResumeData = {
   cellphone: string;
   email: string;
   address: {
-    zipcode: string;
     state: string;
     city: string;
-    street: string;
-    complement: string;
-    neighborhood: string;
+    country: string;
   };
   description: string[];
   skills: string[];

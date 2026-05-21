@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react';
 import { PDFDownloadLink } from '@react-pdf/renderer';
 import { DateTime } from '@mkdigo/datetime';
 
@@ -7,25 +6,14 @@ import facebookLogo from '../../../assets/svgs/facebook.svg';
 import linkedinLogo from '../../../assets/svgs/linkedin.svg';
 
 import { ResumePDF } from '../../../components/ResumePDF';
-import { TResumeData } from '../../../types';
+import { useAppContext } from '../../../hooks/useAppContext';
 
 import styles from './styles.module.scss';
 
 export function Profile() {
-  const [data, setData] = useState<TResumeData>();
+  const { resumeData } = useAppContext();
 
-  useEffect(() => {
-    fetch('/data.json')
-      .then((response) => {
-        if (!response.ok) return;
-        return response.json();
-      })
-      .then((data) => {
-        setData(data);
-      });
-  }, []);
-
-  if (!data) return null;
+  if (!resumeData) return null;
 
   return (
     <section className={styles.profile}>
@@ -40,7 +28,7 @@ export function Profile() {
               </a>
               {'       '}
               <PDFDownloadLink
-                document={<ResumePDF data={data} />}
+                document={<ResumePDF data={resumeData} />}
                 fileName='Resume'
               >
                 Download
@@ -49,11 +37,11 @@ export function Profile() {
           </li>
           <li>
             <strong>Nome:</strong>
-            <span>{data.name}</span>
+            <span>{resumeData.name}</span>
           </li>
           <li>
             <strong>Idade:</strong>
-            <span>{DateTime.getAge(data.birthdate)}</span>
+            <span>{DateTime.getAge(resumeData.birthdate)}</span>
           </li>
           <li>
             <strong>Nacionalidade:</strong>
@@ -62,7 +50,7 @@ export function Profile() {
           <li>
             <strong>Residência:</strong>
             <span>
-              {data.address.city} - {data.address.state}
+              {resumeData.address.city} - {resumeData.address.state}
             </span>
           </li>
           <li>
@@ -82,7 +70,7 @@ export function Profile() {
           </li>
           <li>
             <strong>Resumo:</strong>
-            <span>{data.description.join('\n\n')}</span>
+            <span>{resumeData.description.join('\n\n')}</span>
           </li>
           <li className={styles.socialMedia}>
             <strong>Mídias Sociais:</strong>
@@ -112,7 +100,7 @@ export function Profile() {
           </li>
           <li>
             <strong>Email:</strong>
-            <span>mkdigo@gmail.com</span>
+            <span>{resumeData.email}</span>
           </li>
         </ul>
       </div>

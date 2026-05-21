@@ -5,12 +5,9 @@
   "cellphone": "+55 (11) 96324-2678",
   "email": "mkdigo@gmail.com",
   "address": {
-    "zipcode": "04295-001",
     "state": "SP",
     "city": "São Paulo",
-    "street": "Av. Coronel José Pires de Andrade, 901",
-    "complement": "Condomínio Alto das Mercês, apto 66",
-    "neighborhood": "Vila Vera"
+    "country": "Brasil"
   },
   "description": [
     "Sou uma pessoa dedicada e com sede de conhecimento, onde os estudos fazem parte da minha rotina. Busco sempre fazer as coisas da melhor forma possível. Meu ponto forte é a capacidade de resolver problemas e foi por isso que me identifiquei com o mundo da programação, onde as linhas de códigos são apenas uma ferramenta para isso.",
@@ -58,14 +55,22 @@
   "professional_experiences": [
     {
       "id": 1,
-      "company": "GSN Recruit",
-      "local": "Handa, Aichi-ken, Japão",
-      "position": "Desenvolvedor de sistema e departamento financeiro",
-      "period": "FEVEREIRO 2021 - ABRIL 2026",
-      "description": "Desenvolver os sistemas e o site que a empresa usa. Criação de relatórios financeiros, cálculos de salários a pagar, faturamento, etc."
+      "company": "Aisin",
+      "local": "Takahama, Aichi-ken, Japão",
+      "position": "Responsável pelo abastecimento",
+      "period": "NOVEMBRO 2023 - ABRIL 2026",
+      "description": "A Aisin de Takahama é uma fábrica de fechadura de portas automotivo onde eu era responsável pelo abastecimento dos materiais usados na produção."
     },
     {
       "id": 2,
+      "company": "GSN Recruit",
+      "local": "Handa, Aichi-ken, Japão",
+      "position": "Desenvolvedor de sistema e departamento financeiro",
+      "period": "FEVEREIRO 2021 - OUTUBRO 2023",
+      "description": "Desenvolver os sistemas e o site que a empresa usa. Criação de relatórios financeiros, cálculos de salários a pagar, faturamento, etc."
+    },
+    {
+      "id": 3,
       "company": "Advics",
       "local": "Handa, Aichi-ken, Japão",
       "position": "Responsável pelo abastecimento",
@@ -73,7 +78,7 @@
       "description": "A Advics é uma fábrica de freios automotivo onde eu era responsável pelo abastecimento dos materiais usados na produção."
     },
     {
-      "id": 3,
+      "id": 4,
       "company": "Denso",
       "local": "Anjo, Aichi-ken, Japão",
       "position": "Operador de máquinas",
@@ -81,7 +86,7 @@
       "description": "A Denso é uma fábrica de tubos do ar-condicionado automotivo onde eu era responsável pela operação das máquinas do meu setor."
     },
     {
-      "id": 4,
+      "id": 5,
       "company": "Murata",
       "local": "Komatsu, Ishikawa-ken, Japão",
       "position": "Lider de equipe",
@@ -89,7 +94,7 @@
       "description": "Fábrica de componentes eletrônicos. Era responsável por liderar e organizar os times. Definir as funções, controlar a qualidade, produtividade e prevenção de acidentes."
     },
     {
-      "id": 5,
+      "id": 6,
       "company": "Supermercados Ikeda",
       "local": "Irapuru, São Paulo, Brasil",
       "position": "Auxiliar de escritório",

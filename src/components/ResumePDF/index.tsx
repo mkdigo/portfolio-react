@@ -20,12 +20,10 @@ export function ResumePDF({ data }: Props) {
             </Text>
           </View>
           <View style={styles.address}>
-            <Text>{data.address.street}</Text>
-            <Text>{data.address.complement}</Text>
-            <Text>{data.address.neighborhood}</Text>
             <Text>
               {data.address.city} - {data.address.state}
             </Text>
+            <Text>{data.address.country}</Text>
             <Text style={{ fontWeight: 'bold' }}>{data.cellphone}</Text>
             <Text style={{ fontWeight: 'bold' }}>{data.email}</Text>
           </View>
