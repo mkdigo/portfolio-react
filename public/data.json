@@ -9,33 +9,55 @@
     "city": "São Paulo",
     "country": "Brasil"
   },
+  "title": "Desenvolvedor Full-Stack | Laravel | Node.js | React | TypeScript",
   "description": [
-    "Sou uma pessoa dedicada e com sede de conhecimento, onde os estudos fazem parte da minha rotina. Busco sempre fazer as coisas da melhor forma possível. Meu ponto forte é a capacidade de resolver problemas e foi por isso que me identifiquei com o mundo da programação, onde as linhas de códigos são apenas uma ferramenta para isso.",
-    "Tenho grande facilidade em trabalhar em equipe, buscando sempre o bom convívio e incentivando as pessoas a ajudarem umas às outras.",
-    "Iniciei meus estudos em programação em 2017 com PHP, e desde então estou sempre procurando aprender mais. Hoje, minha principal ferramenta para construir o front-end é o React com Typescript, e para o back-end é o Laravel. No momento tenho focado muito meus estudos em construir um back-end usando Node/Typescript, utilizando os princípios do Domain Driven Design."
+    "Desenvolvedor Web Full-Stack com sólida experiência em PHP (Laravel), TypeScript, React e Node.js. Alinho forte capacidade analítica, vinda de minha formação em Ciências Contábeis, com o desenvolvimento de sistemas corporativos, relatórios financeiros e automação de processos. Vivência internacional de mais de 17 anos no Japão, atuando em equipes multidisciplinares e posições de liderança.",
+    "Criador e desenvolvedor do projeto Meu Salário JP, uma plataforma funcional de cálculo de salário em tempo real utilizada por usuários no Japão.",
+    "Preocupado em desenvolver um código limpo e legível, sem esquecer da importância dos testes automatizados. Hoje focado nos estudos da filosofia Domain Driven Design (DDD), buscando aperfeiçoar o código para grandes projetos."
   ],
-  "skills": [
-    "HTML5",
-    "CSS",
-    "Javascript",
-    "React",
-    "Typescript",
-    "Node",
-    "PHP",
-    "Laravel",
-    "Docker",
-    "Git",
-    "Word",
-    "Excel"
+  "projects": [
+    {
+      "title": "Meu Salário JP",
+      "description": "Aplicação web desenvolvida para auxiliar trabalhadores no Japão a calcularem seus salários e deduções em tempo real com base em horas trabalhadas e horas extras. Cálculo complexo do imposto de renda retido na fonte, seguro desemprego, imposto residencial, dentre outros.",
+      "technologies": "PHP/Laravel, React/TypeScript.",
+      "link": "https://meu-salario-jp.com"
+    }
   ],
+  "skills": {
+    "backend": [
+      "PHP",
+      "Laravel",
+      "Node",
+      "TypeScript",
+      "MySQL",
+      "Fastify",
+      "Express"
+    ],
+    "frontend": ["HTML5", "CSS", "Javascript", "React"],
+    "others": ["Docker", "Git"]
+  },
   "languages": ["Português nativo", "Japonês Básico", "Inglês Iniciante"],
   "graduations": [
     {
-      "id": 1,
-      "institute": "CEALPA - Centro de Ensino da Alta Paulista",
-      "local": "Lucélia/SP",
-      "name": "Bacharel em Ciências Contábeis",
-      "period": "2002 - 2006"
+      "id": 5,
+      "institute": "Branas.io",
+      "local": "Formação Online",
+      "name": "Formação em Inteligência Artificial (Desenvolvimento assistido por IA, Spec-Driven Development SDD)",
+      "period": "07-2026 - em adamento"
+    },
+    {
+      "id": 4,
+      "institute": "FCTECH - Faculdade Full Cycle de Tecnologia",
+      "local": "Evento Online",
+      "name": "Imersão IA for Devs",
+      "period": "20-07-2026 - 22/07/2026"
+    },
+    {
+      "id": 3,
+      "institute": "Compuclass",
+      "local": "São Paulo/SP",
+      "name": "Desenvolvimento Web",
+      "period": "2017"
     },
     {
       "id": 2,
@@ -45,62 +67,68 @@
       "period": "2007"
     },
     {
-      "id": 3,
-      "institute": "Compuclass",
-      "local": "São Paulo/SP",
-      "name": "Desenvolvimento Web",
-      "period": "2017"
-    }
-  ],
-  "professional_experiences": [
-    {
       "id": 1,
-      "company": "Aisin",
-      "local": "Takahama, Aichi-ken, Japão",
-      "position": "Responsável pelo abastecimento",
-      "period": "NOVEMBRO 2023 - ABRIL 2026",
-      "description": "A Aisin de Takahama é uma fábrica de fechadura de portas automotivo onde eu era responsável pelo abastecimento dos materiais usados na produção."
-    },
-    {
-      "id": 2,
-      "company": "GSN Recruit",
-      "local": "Handa, Aichi-ken, Japão",
-      "position": "Desenvolvedor de sistema e departamento financeiro",
-      "period": "FEVEREIRO 2021 - OUTUBRO 2023",
-      "description": "Desenvolver os sistemas e o site que a empresa usa. Criação de relatórios financeiros, cálculos de salários a pagar, faturamento, etc."
-    },
-    {
-      "id": 3,
-      "company": "Advics",
-      "local": "Handa, Aichi-ken, Japão",
-      "position": "Responsável pelo abastecimento",
-      "period": "SETEMBRO 2017 - SETEMBRO 2020",
-      "description": "A Advics é uma fábrica de freios automotivo onde eu era responsável pelo abastecimento dos materiais usados na produção."
-    },
-    {
-      "id": 4,
-      "company": "Denso",
-      "local": "Anjo, Aichi-ken, Japão",
-      "position": "Operador de máquinas",
-      "period": "ABRIL 2013 - AGOSTO 2016",
-      "description": "A Denso é uma fábrica de tubos do ar-condicionado automotivo onde eu era responsável pela operação das máquinas do meu setor."
-    },
-    {
-      "id": 5,
-      "company": "Murata",
-      "local": "Komatsu, Ishikawa-ken, Japão",
-      "position": "Lider de equipe",
-      "period": "MAIO 2008 - MARÇO 2012",
-      "description": "Fábrica de componentes eletrônicos. Era responsável por liderar e organizar os times. Definir as funções, controlar a qualidade, produtividade e prevenção de acidentes."
-    },
-    {
-      "id": 6,
-      "company": "Supermercados Ikeda",
-      "local": "Irapuru, São Paulo, Brasil",
-      "position": "Auxiliar de escritório",
-      "period": "JULHO 2002 - MAIO 2007",
-      "description": "Controle de estoque, cálculo dos custos das mercadorias e escrita fiscal."
+      "institute": "CEALPA - Centro de Ensino da Alta Paulista",
+      "local": "Lucélia/SP",
+      "name": "Bacharel em Ciências Contábeis",
+      "period": "2002 - 2006"
     }
   ],
-  "projects_links": ["https://rodrigomukudai.com", "https://github.com/mkdigo"]
+  "professional_experiences": {
+    "it": [
+      {
+        "id": 2,
+        "company": "GSN Recruit",
+        "local": "Handa, Aichi-ken, Japão",
+        "position": "Desenvolvedor de sistema e departamento financeiro",
+        "period": "FEVEREIRO 2021 - OUTUBRO 2023",
+        "description": "Desenvolvimento e manutenção do sistema interno e site institucional da empresa utilizando no back-end a linguagem PHP com o framework Laravel, e no front-end React/TypeScript. Criação de relatórios financeiros, automação de cálculo de folha de pagamento e faturamento."
+      }
+    ],
+    "others": [
+      {
+        "id": 1,
+        "company": "Aisin",
+        "local": "Takahama, Aichi-ken, Japão",
+        "position": "Responsável pelo abastecimento",
+        "period": "NOVEMBRO 2023 - ABRIL 2026",
+        "description": "Trabalho em equipe, auxílio como intérprete da língua japonesa, otimização de processos, resolução de problemas."
+      },
+
+      {
+        "id": 3,
+        "company": "Advics",
+        "local": "Handa, Aichi-ken, Japão",
+        "position": "Responsável pelo abastecimento",
+        "period": "SETEMBRO 2017 - SETEMBRO 2020",
+        "description": "Trabalho em equipe, auxílio como intérprete da língua japonesa, otimização de processos, resolução de problemas."
+      },
+      {
+        "id": 4,
+        "company": "Denso",
+        "local": "Anjo, Aichi-ken, Japão",
+        "position": "Operador de máquinas",
+        "period": "ABRIL 2013 - AGOSTO 2016",
+        "description": "Disciplina, cumprimento de metas, organização."
+      },
+      {
+        "id": 5,
+        "company": "Murata",
+        "local": "Komatsu, Ishikawa-ken, Japão",
+        "position": "Lider de equipe",
+        "period": "MAIO 2008 - MARÇO 2012",
+        "description": "Responsável por liderar e organizar os times. Definir funções, controlar a qualidade, produtividade e prevenção de acidentes."
+      },
+      {
+        "id": 6,
+        "company": "Supermercados Ikeda",
+        "local": "Irapuru, São Paulo, Brasil",
+        "position": "Auxiliar de escritório",
+        "period": "JULHO 2002 - MAIO 2007",
+        "description": "Controle de estoque, cálculo dos custos das mercadorias e escrita fiscal."
+      }
+    ]
+  },
+
+  "portfolio_links": ["https://rodrigomukudai.com", "https://github.com/mkdigo"]
 }

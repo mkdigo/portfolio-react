@@ -23,7 +23,7 @@ export function QRCode({ size = 100, className = '' }: Props) {
     `TEL;TYPE=CELL:${resumeData.cellphone}`,
     // 'TEL;TYPE=WORK:551133333333',
     `EMAIL:${resumeData.email}`,
-    `URL:${resumeData.projects_links[0]}`,
+    `URL:${resumeData.portfolio_links[0]}`,
     // 'ADR;TYPE=WORK:;;Rua Exemplo, 123;São Paulo;SP;01000-000;Brasil',
     'END:VCARD',
   ];

@@ -1,3 +1,12 @@
+type TProfessionalExperiences = {
+  id: number;
+  company: string;
+  local: string;
+  position: string;
+  period: string;
+  description: string;
+};
+
 export type TResumeData = {
   name: string;
   birthdate: string;
@@ -9,8 +18,19 @@ export type TResumeData = {
     city: string;
     country: string;
   };
+  title: string;
   description: string[];
-  skills: string[];
+  projects: {
+    title: string;
+    description: string;
+    technologies: string;
+    link: string;
+  }[];
+  skills: {
+    backend: string[];
+    frontend: string[];
+    others: string[];
+  };
   languages: string[];
   graduations: {
     id: number;
@@ -20,12 +40,8 @@ export type TResumeData = {
     period: string;
   }[];
   professional_experiences: {
-    id: number;
-    company: string;
-    local: string;
-    position: string;
-    period: string;
-    description: string;
-  }[];
-  projects_links: string[];
+    it: TProfessionalExperiences[];
+    others: TProfessionalExperiences[];
+  };
+  portfolio_links: string[];
 };

@@ -18,7 +18,6 @@ Font.registerHyphenationCallback((word) => [word]);
 
 const defaultValues = {
   fontSize: '11px',
-  gap: '22px',
 };
 
 export const styles = StyleSheet.create({
@@ -27,7 +26,7 @@ export const styles = StyleSheet.create({
     fontFamily: 'Roboto',
     lineHeight: '16px',
     fontSize: defaultValues.fontSize,
-    gap: '15mm',
+    gap: '10mm',
   },
   header: {
     flexDirection: 'row',
@@ -45,30 +44,28 @@ export const styles = StyleSheet.create({
     marginTop: '3mm',
     lineHeight: '12px',
   },
-  content: {
-    flexDirection: 'row',
-    justifyContent: 'space-between',
-  },
-  contentLeft: {
-    gap: defaultValues.gap,
-    width: '115mm',
-  },
-  contentRight: {
-    gap: defaultValues.gap,
-    width: '55mm',
-    lineHeight: '20px',
-  },
-  container: {
-    gap: defaultValues.fontSize,
-  },
   title: {
     fontWeight: 'bold',
     color: '#2079c7',
     marginBottom: '6px',
   },
+  skillsContainer: {
+    flexDirection: 'row',
+    gap: defaultValues.fontSize,
+  },
+  skillsLabel: {
+    fontWeight: 'bold',
+    width: '20mm',
+  },
+  professionalExperience: {
+    gap: defaultValues.fontSize,
+  },
   period: {
     fontSize: '8px',
     color: '#666',
     lineHeight: '12px',
+  },
+  graduation: {
+    gap: defaultValues.fontSize,
   },
 });

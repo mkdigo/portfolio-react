@@ -18,7 +18,7 @@ export function BusinessCard() {
           <h2>Desenvolvedor Full Stack</h2>
         </div>
         <div>
-          {resumeData.projects_links.map((link) => (
+          {resumeData.portfolio_links.map((link) => (
             <Link to={link} key={link}>
               {link}
             </Link>
